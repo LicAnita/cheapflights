@@ -47,7 +47,7 @@
                 <p class="text-xl text-center max-w-2xl mb-8">
                     Never miss a cheap flight again! We constantly monitor prices and alert you on WhatsApp when prices drop.
                 </p>
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2287de98-b5a5-4d92-b735-02763e51dc27.png" alt="Illustration of an airplane flying over a price tag showing low prices" class="rounded-lg shadow-xl mb-8">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7628e140-c0f3-4ce1-847b-801cfe6b56df.png" alt="Flight deals illustration" class="rounded-lg shadow-xl mb-8">
             </div>
         </div>
     </header>
@@ -162,7 +162,7 @@
                                 <button class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-md">
                                     Book Now
                                 </button>
-                                <button class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-4 py-2 rounded-md ml-2 purchased-btn">
+                                <button class="bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-4 py-2 rounded-md ml-2 purchased-btn" style="display:none">
                                     Purchased
                                 </button>
                             </div>
@@ -249,8 +249,9 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
+    <script defer>
+        // Simplified initialization for GitHub Pages
+        function init() {
             // Form submission
             const flightAlertForm = document.getElementById('flightAlertForm');
             const flightResults = document.getElementById('flightResults');
@@ -478,7 +479,9 @@
                     e.preventDefault();
                 });
             });
-        });
+        }
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', init);
     </script>
 </body>
 </html>
